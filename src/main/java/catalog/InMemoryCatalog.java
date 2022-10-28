@@ -36,28 +36,31 @@ public class InMemoryCatalog implements ICatalog {
         new MusicItem(18L, "Escape",                    "Journey",                   "1981-02-25", 11.97, MusicCategory.CLASSIC_ROCK))
     );
 
-    // TODO - Write code below
-
+    // TODO-01a - Write code below
     @Override
     public MusicItem findById(Long id) {
         return null;
     }
 
+    // TODO-02a - Write code below
     @Override
     public Collection<MusicItem> findByKeyword(String keyword) {
         return null;
     }
 
+    // TODO-03a - Write code below
     @Override
     public Collection<MusicItem> findByCategory(MusicCategory category) {
         return null;
     }
 
+    // TODO-04a - Write code below
     @Override
     public int size() {
         return 0;
     }
 
+    // TODO-05a - Write code below
     @Override
     public Collection<MusicItem> getAll() {
         return null;
@@ -96,69 +99,69 @@ public class InMemoryCatalog implements ICatalog {
      */
 
     /**
-     * TODO: find all MusicItems where title is same as artist.
+     * TODO-06: find all MusicItems where title is same as artist.
      * For example, Madonna's first album is simply titled, "Madonna."
      */
 
 
     /**
-     * TODO: find all "rock" items whose price is less
+     * TODO-07: find all "rock" items whose price is less
      * than or equal to the specified price.
      */
 
 
     /**
-     * TODO: how many items of the specified genre
+     * TODO-08: how many items of the specified genre
      * (MusicCategory) do we sell?
      */
 
 
     /**
-     * TODO: determine average price of our low-cost,
+     * TODO-09: determine average price of our low-cost,
      * extensive catalog of music.
      */
 
 
     /**
-     * TODO: find the cheapest item with the
+     * TODO-10: find the cheapest item with the
      * specified genre (MusicCategory).
      */
 
 
     /**
-     * TODO: find the average price of items in
+     * TODO-11: find the average price of items in
      * the specified genre (MusicCategory).
      */
 
 
     /**
-     * TODO: are all items priced at least $10?
+     * TODO-12: are all items priced at least $10?
      * This is a yes/no answer.
      */
 
 
     /**
-     * TODO: do we sell any items with the
+     * TODO-13: do we sell any items with the
      * specified genre (MusicCategory)?
      * Another yes/no answer.
      */
 
 
     /**
-     * TODO: find the titles of all "pop" items,
+     * TODO-14: find the titles of all "pop" items,
      * sorted by natural order.
      * Just the titles!
      */
 
 
     /**
-     * TODO: find all items released in the 80s whose
+     * TODO-15: find all items released in the 80s whose
      * price is less than or equal to the specified price.
      */
 
 
     /**
-     * TODO: return a map whose keys are all the
+     * TODO-16: return a map whose keys are all the
      * genres (categories), and each key's associated value
      * is a collection of items in that genre.
      * If there is a genre that we don't currently

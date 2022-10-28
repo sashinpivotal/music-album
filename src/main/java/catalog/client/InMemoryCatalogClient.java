@@ -10,8 +10,6 @@ package catalog.client;
 
 class InMemoryCatalogClient {
 
-    /* TODO - Write test code
-     */
     public static void main(String[] args) {
          testFindById();
          testFindByKeyword();
@@ -20,22 +18,28 @@ class InMemoryCatalogClient {
          testGetAll();
     }
 
+    // TODO-01b - write code to test FindById(..) method
+    // of the InMemoryCatalog object
     private static void testFindById() {
 
     }
 
+    // TODO-02b - write code
     private static void testFindByKeyword() {
 
     }
 
+    // TODO-03b - write code
     private static void testFindByCategory() {
 
     }
 
+    // TODO-04b - write code
     private static void testSize() {
 
     }
 
+    // TODO-05b - write code
     private static void testGetAll() {
 
     }
