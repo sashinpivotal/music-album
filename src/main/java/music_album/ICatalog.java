@@ -41,7 +41,7 @@ public interface ICatalog {
     /**
      * Size of the catalog.
      */
-    public int size();
+    public int totalNumberOfMusicItems();
 
     /**
      * Read-only view of the entire catalog.

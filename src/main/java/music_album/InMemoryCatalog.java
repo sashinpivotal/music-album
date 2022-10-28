@@ -14,7 +14,7 @@ import java.util.List;
 
 public class InMemoryCatalog implements ICatalog {
 
-    private List<MusicItem> catalogData = new ArrayList<>(List.of(
+    private List<MusicItem> catalogOfMusicItems = new ArrayList<>(List.of(
                    /* id    title                        artist                       releaseDate  price  musicCategory */
         new MusicItem(1L,  "Diva",                      "Annie Lennox",              "1992-01-04", 13.99, MusicCategory.POP),
         new MusicItem(2L,  "Dream of the Blue Turtles", "Sting",                     "1985-02-05", 14.99, MusicCategory.POP),
@@ -56,7 +56,7 @@ public class InMemoryCatalog implements ICatalog {
 
     // TODO-04a - Write code below
     @Override
-    public int size() {
+    public int totalNumberOfMusicItems() {
         return 0;
     }
 
@@ -99,8 +99,11 @@ public class InMemoryCatalog implements ICatalog {
      */
 
     /**
-     * TODO-06: find all MusicItems where title is same as artist.
-     * For example, Madonna's first album is simply titled, "Madonna."
+     * TODO-06:
+     * - Find all MusicItems where title is same as artist.
+     *   For example, Madonna's first album is simply
+     *   titled, "Madonna."
+     * - Write client code in the "InMemoryCatalogCatalogClient"
      */
 
 
@@ -172,7 +175,7 @@ public class InMemoryCatalog implements ICatalog {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder(getClass().getSimpleName() + ": \n");
-        for (MusicItem item: catalogData) {
+        for (MusicItem item: catalogOfMusicItems) {
             builder.append(item).append("\n");
         }
         return builder.toString();
