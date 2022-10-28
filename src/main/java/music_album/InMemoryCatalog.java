@@ -6,7 +6,7 @@
  * Copyright LearningPatterns Inc.
  */
 
-package catalog;
+package music_album;
 
 import java.util.ArrayList;
 import java.util.Collection;

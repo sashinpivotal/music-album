@@ -6,7 +6,7 @@
  * Copyright LearningPatterns Inc.
  */
 
-package catalog;
+package music_album;
 
 public enum MusicCategory {
     BLUES, CLASSICAL, JAZZ, RAP, COUNTRY, POP, ALTERNATIVE, ROCK, CLASSIC_ROCK

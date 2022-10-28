@@ -6,7 +6,7 @@
  * Copyright LearningPatterns Inc.
  */
 
-package catalog.client;
+package music_album.client;
 
 class InMemoryCatalogClient {
 
