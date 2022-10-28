@@ -6,16 +6,11 @@
  * Copyright LearningPatterns Inc.
  */
 
-package catalog.test;
+package catalog.client;
 
-class InMemoryCatalogTest {
+class InMemoryCatalogClient {
 
-    /* TODO
-     * One by one, complete each test method below, and then "activate" it by
-     * uncommenting the call to that method in main().
-     *
-     * Once you see that the test method verifies the corresponding business method
-     * works correctly, you can comment out that call in main() and proceed to the next one.
+    /* TODO - Write test code
      */
     public static void main(String[] args) {
          testFindById();

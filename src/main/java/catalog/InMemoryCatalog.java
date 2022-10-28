@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class InMemoryCatalog implements Catalog {
+public class InMemoryCatalog implements ICatalog {
 
     private List<MusicItem> catalogData = new ArrayList<>(List.of(
                    /* id    title                        artist                       releaseDate  price  musicCategory */
@@ -36,8 +36,8 @@ public class InMemoryCatalog implements Catalog {
         new MusicItem(18L, "Escape",                    "Journey",                   "1981-02-25", 11.97, MusicCategory.CLASSIC_ROCK))
     );
 
-    // TODO - write code below
-    
+    // TODO - Write code below
+
     @Override
     public MusicItem findById(Long id) {
         return null;
@@ -67,22 +67,32 @@ public class InMemoryCatalog implements Catalog {
      * TODO: Do these additional tasks.
      *
      * NOTES:
-     * 0. You can tackle them in any order, each one is independent of the others.
+     * 0. You can tackle them in any order,
+     *    each one is independent of the others.
      *    They generally get harder as you go further down.
      *
-     * 1. None of these methods should print to stdout (the console).  Instead, return a value.
-     *    Each one should be tested by a test method in InMemoryCatalogTest,
-     *    and there you *can* print your results, to verify that your code works correctly.
+     * 1. None of these methods should print to stdout (the console).
+     *    Instead, return a value.
+     *    Each one should be tested by a client method
+     *    (add client method yourself) in InMemoryCatalogClient,
+     *    and there you *can* print your results,
+     *    to verify that your code works correctly.
      *
-     * 2. You may need to research a few things, that's to be expected.  Life Is Open-Book...
+     * 2. You may need to research a few things, that's
+     *    to be expected.  Life Is Open-Book...
      *    The Javadoc is a good first place to look.
      *
-     * 3. Keep a lookout for redundant code.  There is a high probability that you will write a chunk
-     *    of code more than once.  When you see that, you should strongly consider refactoring that
-     *    repeated code into a private method, and then calling that method from where it's needed.
-     *    IntelliJ helps a lot here.  Select the repeated code in question, then
+     * 3. Keep a lookout for redundant code.  There is a
+     *    high probability that you will write a chunk
+     *    of code more than once.  When you see that,
+     *    you should strongly consider refactoring that
+     *    repeated code into a private method, and
+     *    then calling that method from where it's needed.
+     *    IntelliJ helps a lot here.  Select the repeated
+     *    code in question, then
      *    right-click -> Refactor -> Extract Method.
-     *    It's not just about removing redundancies - it will make the more complicated methods easier to write!
+     *    It's not just about removing redundancies - it
+     *    will make the more complicated methods easier to write!
      */
 
     /**
@@ -92,27 +102,32 @@ public class InMemoryCatalog implements Catalog {
 
 
     /**
-     * TODO: find all "rock" items whose price is less than or equal to the specified price.
+     * TODO: find all "rock" items whose price is less
+     * than or equal to the specified price.
      */
 
 
     /**
-     * TODO: how many items of the specified genre (MusicCategory) do we sell?
+     * TODO: how many items of the specified genre
+     * (MusicCategory) do we sell?
      */
 
 
     /**
-     * TODO: determine average price of our low-cost, extensive catalog of music.
+     * TODO: determine average price of our low-cost,
+     * extensive catalog of music.
      */
 
 
     /**
-     * TODO: find the cheapest item with the specified genre (MusicCategory).
+     * TODO: find the cheapest item with the
+     * specified genre (MusicCategory).
      */
 
 
     /**
-     * TODO: find the average price of items in the specified genre (MusicCategory).
+     * TODO: find the average price of items in
+     * the specified genre (MusicCategory).
      */
 
 
@@ -123,26 +138,32 @@ public class InMemoryCatalog implements Catalog {
 
 
     /**
-     * TODO: do we sell any items with the specified genre (MusicCategory)?
+     * TODO: do we sell any items with the
+     * specified genre (MusicCategory)?
      * Another yes/no answer.
      */
 
 
     /**
-     * TODO: find the titles of all "pop" items, sorted by natural order.
+     * TODO: find the titles of all "pop" items,
+     * sorted by natural order.
      * Just the titles!
      */
 
 
     /**
-     * TODO: find all items released in the 80s whose price is less than or equal to the specified price.
+     * TODO: find all items released in the 80s whose
+     * price is less than or equal to the specified price.
      */
 
 
     /**
-     * TODO: return a map whose keys are all the genres (categories), and each key's associated value
-     * is a collection of items in that genre.  If there is a genre that we don't currently
-     * sell, that key's associated value should be an empty collection, not null.
+     * TODO: return a map whose keys are all the
+     * genres (categories), and each key's associated value
+     * is a collection of items in that genre.
+     * If there is a genre that we don't currently
+     * sell, that key's associated value should
+     * be an empty collection, not null.
      */
 
     @Override
